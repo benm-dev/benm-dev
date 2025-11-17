@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Ben Marshall 👋</h1>
+<h1 align="center">Hi, I'm Benjamin Marshall 👋</h1>
 <h3 align="center">Software Developer from Sydney, Australia</h3>
 
 <p align="center">
