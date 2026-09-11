@@ -1,11 +1,9 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/session.svg" alt="Benjamin Marshall" width="100%" />
+  <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/banner.svg" width="100%" alt="Benjamin Marshall" />
 </p>
 
-I build remote workstations, declarative hosts, and small tools that stay out of the way. Most of it isn’t public.
+Systems and clients — remote workstations, declarative hosts, local-first tools. Most of it stays private.
 
-**Now:** Fold-class streaming & input · Nix / Wayland hosts · local-first product tools · agent/IDE glue
+Rust · Swift · Nix · TypeScript · Wayland
 
-**Stack:** Rust · Swift · Nix · TypeScript · Wayland · Python
-
-[site](https://benm-dev.github.io) · [github](https://github.com/benm-dev)
+[benm-dev.github.io](https://benm-dev.github.io)
