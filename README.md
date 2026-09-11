@@ -4,30 +4,28 @@
 
 **Sydney · systems · clients · tooling**
 
-[site](https://benm-dev.github.io) · [github](https://github.com/benm-dev)
+[open the session](https://benm-dev.github.io) · [github](https://github.com/benm-dev)
 
 </div>
 
+```bash
+curl -sL https://benm-dev.github.io/card
+```
+
 ---
 
-I build the boring-hard parts: desktops that stay reproducible, clients that feel native on weird form factors, and small tools that actually ship.
-
-Most of what I work on stays private. What’s public here is the edges.
+My personal site is a **fake Wayland-style compositor**: draggable windows, a live journal boot, scroll-to-zoom workspace. Most of my work is private — this is the public flex.
 
 ### Focus
 
-- **Remote workstation** — streaming, input, Fold-class devices
-- **Declarative systems** — Nix, Wayland, host identity, zero drift
-- **Product tools** — stocktake / venue ops, local-first when it matters
-- **Agent & IDE glue** — workflows that cut friction, not noise
+- **Remote workstation** — streaming + input for Fold-class devices
+- **Declarative systems** — Nix hosts, Wayland desktops, zero drift
+- **Product tools** — local-first ops when the floor can’t wait
+- **Agent glue** — quiet automation, not dashboard theater
 
 ### Stack
 
 `Rust` · `Swift` · `Nix` · `TypeScript` · `Wayland` · `Python`
-
-### Elsewhere
-
-Personal site → [benm-dev.github.io](https://benm-dev.github.io)
 
 ---
 
