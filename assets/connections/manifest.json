@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "renderer": "scripts/render_connections.py",
+  "input_sha256": "67889ad2838e98568264c8eeddf4fc2078299f69ae65fe1183248851b1c6d0e3",
+  "window": {
+    "from": "2026-07-18",
+    "to": "2026-09-11"
+  },
+  "counts": {
+    "kinds": [
+      802,
+      259,
+      132
+    ],
+    "public": 38,
+    "private": 1155,
+    "total": 1193
+  },
+  "motion": {
+    "seconds": 21.46,
+    "repeats": 1,
+    "packet_weight_total": 1193
+  },
+  "files": {
+    "README.md": "e5c3cf996c2947b0ab65102cd604fc1e31d41046cdfff4b1a0ad46495e99b778",
+    "assets/connections/map-dark-mobile.svg": "d516ac3a14c6e36339cb839e3a9a0a802e4c26b83cd8f0ebab0a897a24a5c055",
+    "assets/connections/map-dark.svg": "eed58b9c24aee470711f77990143d7228832853cafbc8e4f46d87383b40d75c5",
+    "assets/connections/map-light-mobile.svg": "a93e3a6321494557a976ce6f61cc04ade87e500b4de7d2b10e8219dafe34ccf1",
+    "assets/connections/map-light.svg": "55795d1d8a13505887c0caf2d0a8195b9bd5dbc6d3694012ed5117f187d58fe6",
+    "assets/connections/map-still-dark-mobile.svg": "e9fae3f243c8599843c455b08a3f32935605956bea09834281fc6cc10168f2d1",
+    "assets/connections/map-still-dark.svg": "357e9a04fbdb208200dd931ba57fe5d9d7ee11513971bcec35a6232127ac0a96",
+    "assets/connections/map-still-light-mobile.svg": "6ad5ef3184ce1689c1e6f0485f81aa3c92d61116238e48315650fcfb5a7f4c08",
+    "assets/connections/map-still-light.svg": "f34d8a5791165ca9d2acbdd568d4c7891d1b62ba5a3c8a6b236bc4902afb74a2"
+  }
+}
