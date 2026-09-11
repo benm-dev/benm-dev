@@ -2,7 +2,7 @@
 <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/identity-dark-mobile.svg"/>
 <source media="(max-width: 640px)" srcset="./assets/enclosure/identity-light-mobile.svg"/>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/identity-dark.svg"/>
-<img src="./assets/enclosure/identity-light.svg" width="100%" alt="Ben Marshall, Sydney. Linux systems, remote interfaces and developer tools."/>
+<img src="./assets/enclosure/identity-light.svg" width="100%" alt="Ben Marshall, Sydney. Systems, software and AI."/>
 </picture>
 <details>
 <summary><picture>
@@ -16,13 +16,13 @@
 <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/work-tab-dark-mobile.svg"/>
 <source media="(max-width: 640px)" srcset="./assets/enclosure/work-tab-light-mobile.svg"/>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/work-tab-dark.svg"/>
-<img src="./assets/enclosure/work-tab-light.svg" width="100%" alt="What I build. Expand for Linux systems, remote interfaces, agent coordination, local AI research and system awareness."/>
+<img src="./assets/enclosure/work-tab-light.svg" width="100%" alt="What I build. Expand for systems, software, AI, integration and experimentation."/>
 </picture></summary>
 <picture>
 <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/work-dark-mobile.svg"/>
 <source media="(max-width: 640px)" srcset="./assets/enclosure/work-light-mobile.svg"/>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/work-dark.svg"/>
-<img src="./assets/enclosure/work-light.svg" width="100%" alt="Linux systems: Experience with RHEL infrastructure, offline patching and hardening. Building reproducible NixOS workstations with Wayland and remote access. Remote interfaces: Developing a touch-first desktop experience for unfolded phones: streaming, session-aware input, side gestures and on-screen typing. Agent coordination: Designing a PostgreSQL task ledger for coding agents: leased work, durable handoffs, isolated Git worktrees and serial integration. Local AI research: Exploring local model serving on a DGX Spark, memory reclamation between workloads and agent-driven image workflows. System awareness: Exploring how configuration, source, running components and functional checks connect, so people and coding agents can inspect the same system."/>
+<img src="./assets/enclosure/work-light.svg" width="100%" alt="Systems &amp; infrastructure: Linux, networking, security and automation. I work across the layers that make systems reliable, maintainable and easier to operate. Software &amp; interfaces: Applications, developer tools and ways of interacting with computers. I care about how software feels to use and how it fits into real workflows. AI &amp; automation: Exploring local AI, coding agents and automated workflows, with an interest in making useful capabilities easier to control and connect. Integration &amp; architecture: Connecting applications, services and devices. I like understanding how the pieces work together, then making them easier to extend and debug. Experimentation: A mix of hands-on engineering, research and prototypes. I enjoy learning unfamiliar systems, testing ideas and turning useful experiments into practical tools."/>
 </picture>
 </details>
 <details>

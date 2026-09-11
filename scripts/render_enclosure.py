@@ -128,10 +128,10 @@ def machine(p,cx,cy,scale=1,opened=False,wire=False):
     p.add('</g>')
 
 def identity(m,t):
-    p=Panel('identity',m,t,168 if m else 136,'Ben Marshall — Sydney. Systems, interfaces and developer tools.')
+    p=Panel('identity',m,t,168 if m else 136,'Ben Marshall — Sydney. Systems, software and AI.')
     p.text(p.p,34,'BENM-DEV / SYDNEY',14,'muted')
     p.text(p.p,89,'Ben Marshall',37 if m else 47,weight=500,depth=True)
-    p.wrap(p.p,126,'Linux systems. Remote interfaces. Developer tools.',p.w-2*p.p,17 if m else 18,line=26)
+    p.wrap(p.p,126,'Systems. Software. AI.',p.w-2*p.p,17 if m else 18,line=26)
     return p
 
 def cover(m,t):
@@ -150,15 +150,15 @@ def summary(name,m,t,index,title,sub):
     return p
 
 WORK_SECTIONS = [
-    ('Linux systems', 'Experience with RHEL infrastructure, offline patching and hardening. Building reproducible NixOS workstations with Wayland and remote access.'),
-    ('Remote interfaces', 'Developing a touch-first desktop experience for unfolded phones: streaming, session-aware input, side gestures and on-screen typing.'),
-    ('Agent coordination', 'Designing a PostgreSQL task ledger for coding agents: leased work, durable handoffs, isolated Git worktrees and serial integration.'),
-    ('Local AI research', 'Exploring local model serving on a DGX Spark, memory reclamation between workloads and agent-driven image workflows.'),
-    ('System awareness', 'Exploring how configuration, source, running components and functional checks connect, so people and coding agents can inspect the same system.'),
+    ('Systems & infrastructure', 'Linux, networking, security and automation. I work across the layers that make systems reliable, maintainable and easier to operate.'),
+    ('Software & interfaces', 'Applications, developer tools and ways of interacting with computers. I care about how software feels to use and how it fits into real workflows.'),
+    ('AI & automation', 'Exploring local AI, coding agents and automated workflows, with an interest in making useful capabilities easier to control and connect.'),
+    ('Integration & architecture', 'Connecting applications, services and devices. I like understanding how the pieces work together, then making them easier to extend and debug.'),
+    ('Experimentation', 'A mix of hands-on engineering, research and prototypes. I enjoy learning unfamiliar systems, testing ideas and turning useful experiments into practical tools.'),
 ]
 
 def work(m,t):
-    p=Panel('work',m,t,100,'Experience, development and research across Linux, remote interfaces and local AI.')
+    p=Panel('work',m,t,100,'Systems, software, AI, integration and experimentation.')
     y=23
     for i,(title,copy) in enumerate(WORK_SECTIONS):
         if m:
@@ -280,13 +280,13 @@ def picture(name,alt,inline=False):
 def content(inline=False):
     img=lambda name,alt:picture(name,alt,inline)
     section=lambda head,alt,body:'<details>\n<summary>'+img(head,alt)+'</summary>\n'+body+'\n</details>\n'
-    work_section=section('work-tab','What I build. Expand for Linux systems, remote interfaces, agent coordination, local AI research and system awareness.',img('work',' '.join(title+': '+copy for title,copy in WORK_SECTIONS)))
+    work_section=section('work-tab','What I build. Expand for systems, software, AI, integration and experimentation.',img('work',' '.join(title+': '+copy for title,copy in WORK_SECTIONS)))
     signal_section=section('signal-tab','Follow a touch. Expand a conceptual remote input path.',img('signal','Conceptual path: touch input, connected session, compositor focus and application input.'))
     scope_section=section('scope-tab','What is counted. Expand the scope of the activity snapshot.',img('scope',SNAPSHOT['scope']+' '+SNAPSHOT['coverage']))
     metric_alt=' '.join(f'{label}: {sum(SNAPSHOT["metrics"][key]["public"]):,} public and {sum(SNAPSHOT["metrics"][key]["private"]):,} private.' for key,label in [('commits','Commits'),('pull_requests','Pull requests opened'),('issues','Issues opened')])
     private_section=section('private-tab',f'Lift the private layer. Reveal {PRIVATE:,} private recorded actions.',img('private',f'{PRIVATE:,} private actions; {TOTAL:,} total. '+metric_alt)+scope_section)
     activity_section=section('activity-tab','Look below the surface. Open the public and private activity snapshot.',img('public',f'{PUBLIC:,} public actions. {DATE_RANGE}. One pillar for each of 56 days.')+private_section)
-    return img('identity','Ben Marshall, Sydney. Linux systems, remote interfaces and developer tools.')+'\n<details'+(' open' if inline else '')+'>\n<summary>'+img('cover','Open the enclosure. Explore work, input and activity.')+'</summary>\n'+work_section+signal_section+activity_section+'\n</details>\n'+img('footer','Most current work is private. Explore its systems and interfaces.')
+    return img('identity','Ben Marshall, Sydney. Systems, software and AI.')+'\n<details'+(' open' if inline else '')+'>\n<summary>'+img('cover','Open the enclosure. Explore work, input and activity.')+'</summary>\n'+work_section+signal_section+activity_section+'\n</details>\n'+img('footer','Most current work is private. Explore its systems and interfaces.')
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
