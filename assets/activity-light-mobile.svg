@@ -1,0 +1,263 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1010" role="img" aria-labelledby="title desc">
+<title id="title">Public and private activity, aggregated</title>
+<desc id="desc">1193 records in a 56-day snapshot. Public: 38. Private: 1155. Commit, pull request and issue counts follow the documented collection scope.</desc>
+<rect width="720" height="1010" fill="#ffffff"/>
+<text x="44" y="45" fill="#1f2328" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" text-anchor="start">Public + private activity</text>
+<text x="676" y="79" fill="#656d76" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="end">Captured 2026-09-11</text>
+<text x="44" y="140" fill="#656d76" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" text-anchor="start">Commits</text>
+<text x="44" y="215" fill="#1f2328" font-family="DejaVu Sans,Arial,sans-serif" font-size="64" text-anchor="start">802</text>
+<text x="199" y="188" fill="#32777c" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="start">38 public</text>
+<text x="199" y="215" fill="#975d34" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="start">764 private</text>
+<line x1="44.00" y1="347" x2="49.87" y2="347" stroke="#d8dee4"/>
+<rect x="44.00" y="343.90" width="6.77" height="2.10" rx="1" fill="#975d34"><title>2026-07-18: 3 private</title></rect>
+<line x1="55.29" y1="347" x2="61.15" y2="347" stroke="#d8dee4"/>
+<rect x="55.29" y="334.82" width="6.77" height="11.18" rx="1" fill="#975d34"><title>2026-07-19: 16 private</title></rect>
+<line x1="66.57" y1="347" x2="72.44" y2="347" stroke="#d8dee4"/>
+<line x1="77.86" y1="347" x2="83.73" y2="347" stroke="#d8dee4"/>
+<rect x="77.86" y="301.29" width="6.77" height="44.71" rx="1" fill="#975d34"><title>2026-07-21: 64 private</title></rect>
+<line x1="89.14" y1="347" x2="95.01" y2="347" stroke="#d8dee4"/>
+<line x1="100.43" y1="347" x2="106.30" y2="347" stroke="#d8dee4"/>
+<line x1="111.71" y1="347" x2="117.58" y2="347" stroke="#d8dee4"/>
+<line x1="123.00" y1="347" x2="128.87" y2="347" stroke="#d8dee4"/>
+<rect x="123.00" y="330.63" width="6.77" height="15.37" rx="1" fill="#975d34"><title>2026-07-25: 22 private</title></rect>
+<line x1="134.29" y1="347" x2="140.15" y2="347" stroke="#d8dee4"/>
+<line x1="145.57" y1="347" x2="151.44" y2="347" stroke="#d8dee4"/>
+<rect x="145.57" y="329.24" width="6.77" height="16.76" rx="1" fill="#975d34"><title>2026-07-27: 24 private</title></rect>
+<line x1="156.86" y1="347" x2="162.73" y2="347" stroke="#d8dee4"/>
+<rect x="156.86" y="339.01" width="6.77" height="6.99" rx="1" fill="#975d34"><title>2026-07-28: 10 private</title></rect>
+<line x1="168.14" y1="347" x2="174.01" y2="347" stroke="#d8dee4"/>
+<rect x="168.14" y="344.60" width="6.77" height="1.40" rx="1" fill="#975d34"><title>2026-07-29: 2 private</title></rect>
+<line x1="179.43" y1="347" x2="185.30" y2="347" stroke="#d8dee4"/>
+<rect x="179.43" y="344.60" width="6.77" height="1.40" rx="1" fill="#975d34"><title>2026-07-30: 2 private</title></rect>
+<line x1="190.71" y1="347" x2="196.58" y2="347" stroke="#d8dee4"/>
+<rect x="190.71" y="303.39" width="6.77" height="42.61" rx="1" fill="#975d34"><title>2026-07-31: 61 private</title></rect>
+<line x1="202.00" y1="347" x2="207.87" y2="347" stroke="#d8dee4"/>
+<rect x="202.00" y="322.95" width="6.77" height="23.05" rx="1" fill="#975d34"><title>2026-08-01: 33 private</title></rect>
+<line x1="213.29" y1="347" x2="219.15" y2="347" stroke="#d8dee4"/>
+<rect x="213.29" y="342.51" width="6.77" height="3.49" rx="1" fill="#975d34"><title>2026-08-02: 5 private</title></rect>
+<line x1="224.57" y1="347" x2="230.44" y2="347" stroke="#d8dee4"/>
+<rect x="224.57" y="345.30" width="6.77" height="0.70" rx="1" fill="#975d34"><title>2026-08-03: 1 private</title></rect>
+<line x1="235.86" y1="347" x2="241.73" y2="347" stroke="#d8dee4"/>
+<line x1="247.14" y1="347" x2="253.01" y2="347" stroke="#d8dee4"/>
+<rect x="247.14" y="341.11" width="6.77" height="4.89" rx="1" fill="#975d34"><title>2026-08-05: 7 private</title></rect>
+<line x1="258.43" y1="347" x2="264.30" y2="347" stroke="#d8dee4"/>
+<line x1="269.71" y1="347" x2="275.58" y2="347" stroke="#d8dee4"/>
+<rect x="269.71" y="343.90" width="6.77" height="2.10" rx="1" fill="#975d34"><title>2026-08-07: 3 private</title></rect>
+<line x1="281.00" y1="347" x2="286.87" y2="347" stroke="#d8dee4"/>
+<rect x="281.00" y="339.71" width="6.77" height="6.29" rx="1" fill="#975d34"><title>2026-08-08: 9 private</title></rect>
+<line x1="292.29" y1="347" x2="298.15" y2="347" stroke="#d8dee4"/>
+<rect x="292.29" y="343.90" width="6.77" height="2.10" rx="1" fill="#975d34"><title>2026-08-09: 3 private</title></rect>
+<line x1="303.57" y1="347" x2="309.44" y2="347" stroke="#d8dee4"/>
+<line x1="314.86" y1="347" x2="320.73" y2="347" stroke="#d8dee4"/>
+<line x1="326.14" y1="347" x2="332.01" y2="347" stroke="#d8dee4"/>
+<rect x="326.14" y="341.81" width="6.77" height="4.19" rx="1" fill="#975d34"><title>2026-08-12: 6 private</title></rect>
+<line x1="337.43" y1="347" x2="343.30" y2="347" stroke="#d8dee4"/>
+<rect x="337.43" y="322.25" width="6.77" height="23.75" rx="1" fill="#975d34"><title>2026-08-13: 34 private</title></rect>
+<line x1="348.71" y1="347" x2="354.58" y2="347" stroke="#d8dee4"/>
+<rect x="348.71" y="306.88" width="6.77" height="39.12" rx="1" fill="#975d34"><title>2026-08-14: 56 private</title></rect>
+<line x1="360.00" y1="347" x2="365.87" y2="347" stroke="#d8dee4"/>
+<rect x="360.00" y="319.46" width="6.77" height="26.54" rx="1" fill="#975d34"><title>2026-08-15: 38 private</title></rect>
+<line x1="371.29" y1="347" x2="377.15" y2="347" stroke="#d8dee4"/>
+<rect x="371.29" y="332.73" width="6.77" height="13.27" rx="1" fill="#975d34"><title>2026-08-16: 19 private</title></rect>
+<line x1="382.57" y1="347" x2="388.44" y2="347" stroke="#d8dee4"/>
+<rect x="382.57" y="339.71" width="6.77" height="6.29" rx="1" fill="#975d34"><title>2026-08-17: 9 private</title></rect>
+<line x1="393.86" y1="347" x2="399.73" y2="347" stroke="#d8dee4"/>
+<rect x="393.86" y="339.71" width="6.77" height="6.29" rx="1" fill="#975d34"><title>2026-08-18: 9 private</title></rect>
+<line x1="405.14" y1="347" x2="411.01" y2="347" stroke="#d8dee4"/>
+<line x1="416.43" y1="347" x2="422.30" y2="347" stroke="#d8dee4"/>
+<rect x="416.43" y="343.21" width="6.77" height="2.79" rx="1" fill="#975d34"><title>2026-08-20: 4 private</title></rect>
+<line x1="427.71" y1="347" x2="433.58" y2="347" stroke="#d8dee4"/>
+<line x1="439.00" y1="347" x2="444.87" y2="347" stroke="#d8dee4"/>
+<rect x="439.00" y="321.55" width="6.77" height="24.45" rx="1" fill="#975d34"><title>2026-08-22: 35 private</title></rect>
+<line x1="450.29" y1="347" x2="456.15" y2="347" stroke="#d8dee4"/>
+<rect x="450.29" y="344.60" width="6.77" height="1.40" rx="1" fill="#975d34"><title>2026-08-23: 2 private</title></rect>
+<line x1="461.57" y1="347" x2="467.44" y2="347" stroke="#d8dee4"/>
+<line x1="472.86" y1="347" x2="478.73" y2="347" stroke="#d8dee4"/>
+<line x1="484.14" y1="347" x2="490.01" y2="347" stroke="#d8dee4"/>
+<rect x="484.14" y="344.60" width="6.77" height="1.40" rx="1" fill="#975d34"><title>2026-08-26: 2 private</title></rect>
+<line x1="495.43" y1="347" x2="501.30" y2="347" stroke="#d8dee4"/>
+<line x1="506.71" y1="347" x2="512.58" y2="347" stroke="#d8dee4"/>
+<line x1="518.00" y1="347" x2="523.87" y2="347" stroke="#d8dee4"/>
+<rect x="518.00" y="338.32" width="6.77" height="7.68" rx="1" fill="#975d34"><title>2026-08-29: 11 private</title></rect>
+<line x1="529.29" y1="347" x2="535.15" y2="347" stroke="#d8dee4"/>
+<rect x="529.29" y="289.42" width="6.77" height="56.58" rx="1" fill="#975d34"><title>2026-08-30: 81 private</title></rect>
+<line x1="540.57" y1="347" x2="546.44" y2="347" stroke="#d8dee4"/>
+<rect x="540.57" y="333.43" width="6.77" height="12.57" rx="1" fill="#975d34"><title>2026-08-31: 18 private</title></rect>
+<line x1="551.86" y1="347" x2="557.73" y2="347" stroke="#d8dee4"/>
+<rect x="551.86" y="345.30" width="6.77" height="0.70" rx="1" fill="#975d34"><title>2026-09-01: 1 private</title></rect>
+<line x1="563.14" y1="347" x2="569.01" y2="347" stroke="#d8dee4"/>
+<rect x="563.14" y="345.30" width="6.77" height="0.70" rx="1" fill="#975d34"><title>2026-09-02: 1 private</title></rect>
+<line x1="574.43" y1="347" x2="580.30" y2="347" stroke="#d8dee4"/>
+<line x1="585.71" y1="347" x2="591.58" y2="347" stroke="#d8dee4"/>
+<rect x="585.71" y="320.85" width="6.77" height="25.15" rx="1" fill="#975d34"><title>2026-09-04: 36 private</title></rect>
+<line x1="597.00" y1="347" x2="602.87" y2="347" stroke="#d8dee4"/>
+<rect x="597.00" y="251.00" width="6.77" height="95.00" rx="1" fill="#975d34"><title>2026-09-05: 136 private</title></rect>
+<line x1="608.29" y1="347" x2="614.15" y2="347" stroke="#d8dee4"/>
+<line x1="619.57" y1="347" x2="625.44" y2="347" stroke="#d8dee4"/>
+<line x1="630.86" y1="347" x2="636.73" y2="347" stroke="#d8dee4"/>
+<line x1="642.14" y1="347" x2="648.01" y2="347" stroke="#d8dee4"/>
+<rect x="642.14" y="345.30" width="6.77" height="0.70" rx="1" fill="#975d34"><title>2026-09-09: 1 private</title></rect>
+<line x1="653.43" y1="347" x2="659.30" y2="347" stroke="#d8dee4"/>
+<line x1="664.71" y1="347" x2="670.58" y2="347" stroke="#d8dee4"/>
+<rect x="664.71" y="319.46" width="6.77" height="26.54" rx="1" fill="#32777c"><title>2026-09-11: 38 public</title></rect>
+<text x="44" y="415" fill="#656d76" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" text-anchor="start">Pull requests opened</text>
+<text x="44" y="490" fill="#1f2328" font-family="DejaVu Sans,Arial,sans-serif" font-size="64" text-anchor="start">259</text>
+<text x="199" y="463" fill="#32777c" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="start">0 public</text>
+<text x="199" y="490" fill="#975d34" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="start">259 private</text>
+<line x1="44.00" y1="622" x2="49.87" y2="622" stroke="#d8dee4"/>
+<rect x="44.00" y="618.84" width="6.77" height="2.16" rx="1" fill="#975d34"><title>2026-07-18: 1 private</title></rect>
+<line x1="55.29" y1="622" x2="61.15" y2="622" stroke="#d8dee4"/>
+<rect x="55.29" y="595.09" width="6.77" height="25.91" rx="1" fill="#975d34"><title>2026-07-19: 12 private</title></rect>
+<line x1="66.57" y1="622" x2="72.44" y2="622" stroke="#d8dee4"/>
+<line x1="77.86" y1="622" x2="83.73" y2="622" stroke="#d8dee4"/>
+<rect x="77.86" y="597.25" width="6.77" height="23.75" rx="1" fill="#975d34"><title>2026-07-21: 11 private</title></rect>
+<line x1="89.14" y1="622" x2="95.01" y2="622" stroke="#d8dee4"/>
+<line x1="100.43" y1="622" x2="106.30" y2="622" stroke="#d8dee4"/>
+<line x1="111.71" y1="622" x2="117.58" y2="622" stroke="#d8dee4"/>
+<line x1="123.00" y1="622" x2="128.87" y2="622" stroke="#d8dee4"/>
+<rect x="123.00" y="603.73" width="6.77" height="17.27" rx="1" fill="#975d34"><title>2026-07-25: 8 private</title></rect>
+<line x1="134.29" y1="622" x2="140.15" y2="622" stroke="#d8dee4"/>
+<line x1="145.57" y1="622" x2="151.44" y2="622" stroke="#d8dee4"/>
+<rect x="145.57" y="603.73" width="6.77" height="17.27" rx="1" fill="#975d34"><title>2026-07-27: 8 private</title></rect>
+<line x1="156.86" y1="622" x2="162.73" y2="622" stroke="#d8dee4"/>
+<rect x="156.86" y="603.73" width="6.77" height="17.27" rx="1" fill="#975d34"><title>2026-07-28: 8 private</title></rect>
+<line x1="168.14" y1="622" x2="174.01" y2="622" stroke="#d8dee4"/>
+<rect x="168.14" y="616.68" width="6.77" height="4.32" rx="1" fill="#975d34"><title>2026-07-29: 2 private</title></rect>
+<line x1="179.43" y1="622" x2="185.30" y2="622" stroke="#d8dee4"/>
+<rect x="179.43" y="616.68" width="6.77" height="4.32" rx="1" fill="#975d34"><title>2026-07-30: 2 private</title></rect>
+<line x1="190.71" y1="622" x2="196.58" y2="622" stroke="#d8dee4"/>
+<rect x="190.71" y="564.86" width="6.77" height="56.14" rx="1" fill="#975d34"><title>2026-07-31: 26 private</title></rect>
+<line x1="202.00" y1="622" x2="207.87" y2="622" stroke="#d8dee4"/>
+<rect x="202.00" y="616.68" width="6.77" height="4.32" rx="1" fill="#975d34"><title>2026-08-01: 2 private</title></rect>
+<line x1="213.29" y1="622" x2="219.15" y2="622" stroke="#d8dee4"/>
+<rect x="213.29" y="616.68" width="6.77" height="4.32" rx="1" fill="#975d34"><title>2026-08-02: 2 private</title></rect>
+<line x1="224.57" y1="622" x2="230.44" y2="622" stroke="#d8dee4"/>
+<rect x="224.57" y="618.84" width="6.77" height="2.16" rx="1" fill="#975d34"><title>2026-08-03: 1 private</title></rect>
+<line x1="235.86" y1="622" x2="241.73" y2="622" stroke="#d8dee4"/>
+<line x1="247.14" y1="622" x2="253.01" y2="622" stroke="#d8dee4"/>
+<rect x="247.14" y="614.52" width="6.77" height="6.48" rx="1" fill="#975d34"><title>2026-08-05: 3 private</title></rect>
+<line x1="258.43" y1="622" x2="264.30" y2="622" stroke="#d8dee4"/>
+<line x1="269.71" y1="622" x2="275.58" y2="622" stroke="#d8dee4"/>
+<line x1="281.00" y1="622" x2="286.87" y2="622" stroke="#d8dee4"/>
+<rect x="281.00" y="603.73" width="6.77" height="17.27" rx="1" fill="#975d34"><title>2026-08-08: 8 private</title></rect>
+<line x1="292.29" y1="622" x2="298.15" y2="622" stroke="#d8dee4"/>
+<rect x="292.29" y="592.93" width="6.77" height="28.07" rx="1" fill="#975d34"><title>2026-08-09: 13 private</title></rect>
+<line x1="303.57" y1="622" x2="309.44" y2="622" stroke="#d8dee4"/>
+<line x1="314.86" y1="622" x2="320.73" y2="622" stroke="#d8dee4"/>
+<line x1="326.14" y1="622" x2="332.01" y2="622" stroke="#d8dee4"/>
+<rect x="326.14" y="614.52" width="6.77" height="6.48" rx="1" fill="#975d34"><title>2026-08-12: 3 private</title></rect>
+<line x1="337.43" y1="622" x2="343.30" y2="622" stroke="#d8dee4"/>
+<rect x="337.43" y="605.89" width="6.77" height="15.11" rx="1" fill="#975d34"><title>2026-08-13: 7 private</title></rect>
+<line x1="348.71" y1="622" x2="354.58" y2="622" stroke="#d8dee4"/>
+<rect x="348.71" y="605.89" width="6.77" height="15.11" rx="1" fill="#975d34"><title>2026-08-14: 7 private</title></rect>
+<line x1="360.00" y1="622" x2="365.87" y2="622" stroke="#d8dee4"/>
+<rect x="360.00" y="612.36" width="6.77" height="8.64" rx="1" fill="#975d34"><title>2026-08-15: 4 private</title></rect>
+<line x1="371.29" y1="622" x2="377.15" y2="622" stroke="#d8dee4"/>
+<rect x="371.29" y="597.25" width="6.77" height="23.75" rx="1" fill="#975d34"><title>2026-08-16: 11 private</title></rect>
+<line x1="382.57" y1="622" x2="388.44" y2="622" stroke="#d8dee4"/>
+<line x1="393.86" y1="622" x2="399.73" y2="622" stroke="#d8dee4"/>
+<rect x="393.86" y="603.73" width="6.77" height="17.27" rx="1" fill="#975d34"><title>2026-08-18: 8 private</title></rect>
+<line x1="405.14" y1="622" x2="411.01" y2="622" stroke="#d8dee4"/>
+<line x1="416.43" y1="622" x2="422.30" y2="622" stroke="#d8dee4"/>
+<line x1="427.71" y1="622" x2="433.58" y2="622" stroke="#d8dee4"/>
+<line x1="439.00" y1="622" x2="444.87" y2="622" stroke="#d8dee4"/>
+<rect x="439.00" y="592.93" width="6.77" height="28.07" rx="1" fill="#975d34"><title>2026-08-22: 13 private</title></rect>
+<line x1="450.29" y1="622" x2="456.15" y2="622" stroke="#d8dee4"/>
+<line x1="461.57" y1="622" x2="467.44" y2="622" stroke="#d8dee4"/>
+<line x1="472.86" y1="622" x2="478.73" y2="622" stroke="#d8dee4"/>
+<line x1="484.14" y1="622" x2="490.01" y2="622" stroke="#d8dee4"/>
+<line x1="495.43" y1="622" x2="501.30" y2="622" stroke="#d8dee4"/>
+<line x1="506.71" y1="622" x2="512.58" y2="622" stroke="#d8dee4"/>
+<line x1="518.00" y1="622" x2="523.87" y2="622" stroke="#d8dee4"/>
+<rect x="518.00" y="610.20" width="6.77" height="10.80" rx="1" fill="#975d34"><title>2026-08-29: 5 private</title></rect>
+<line x1="529.29" y1="622" x2="535.15" y2="622" stroke="#d8dee4"/>
+<rect x="529.29" y="595.09" width="6.77" height="25.91" rx="1" fill="#975d34"><title>2026-08-30: 12 private</title></rect>
+<line x1="540.57" y1="622" x2="546.44" y2="622" stroke="#d8dee4"/>
+<rect x="540.57" y="605.89" width="6.77" height="15.11" rx="1" fill="#975d34"><title>2026-08-31: 7 private</title></rect>
+<line x1="551.86" y1="622" x2="557.73" y2="622" stroke="#d8dee4"/>
+<line x1="563.14" y1="622" x2="569.01" y2="622" stroke="#d8dee4"/>
+<line x1="574.43" y1="622" x2="580.30" y2="622" stroke="#d8dee4"/>
+<line x1="585.71" y1="622" x2="591.58" y2="622" stroke="#d8dee4"/>
+<rect x="585.71" y="579.98" width="6.77" height="41.02" rx="1" fill="#975d34"><title>2026-09-04: 19 private</title></rect>
+<line x1="597.00" y1="622" x2="602.87" y2="622" stroke="#d8dee4"/>
+<rect x="597.00" y="526.00" width="6.77" height="95.00" rx="1" fill="#975d34"><title>2026-09-05: 44 private</title></rect>
+<line x1="608.29" y1="622" x2="614.15" y2="622" stroke="#d8dee4"/>
+<rect x="608.29" y="612.36" width="6.77" height="8.64" rx="1" fill="#975d34"><title>2026-09-06: 4 private</title></rect>
+<line x1="619.57" y1="622" x2="625.44" y2="622" stroke="#d8dee4"/>
+<line x1="630.86" y1="622" x2="636.73" y2="622" stroke="#d8dee4"/>
+<line x1="642.14" y1="622" x2="648.01" y2="622" stroke="#d8dee4"/>
+<rect x="642.14" y="605.89" width="6.77" height="15.11" rx="1" fill="#975d34"><title>2026-09-09: 7 private</title></rect>
+<line x1="653.43" y1="622" x2="659.30" y2="622" stroke="#d8dee4"/>
+<line x1="664.71" y1="622" x2="670.58" y2="622" stroke="#d8dee4"/>
+<rect x="664.71" y="618.84" width="6.77" height="2.16" rx="1" fill="#975d34"><title>2026-09-11: 1 private</title></rect>
+<text x="44" y="690" fill="#656d76" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" text-anchor="start">Issues opened</text>
+<text x="44" y="765" fill="#1f2328" font-family="DejaVu Sans,Arial,sans-serif" font-size="64" text-anchor="start">132</text>
+<text x="199" y="738" fill="#32777c" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="start">0 public</text>
+<text x="199" y="765" fill="#975d34" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" text-anchor="start">132 private</text>
+<line x1="44.00" y1="897" x2="49.87" y2="897" stroke="#d8dee4"/>
+<rect x="44.00" y="885.44" width="6.77" height="10.56" rx="1" fill="#975d34"><title>2026-07-18: 6 private</title></rect>
+<line x1="55.29" y1="897" x2="61.15" y2="897" stroke="#d8dee4"/>
+<line x1="66.57" y1="897" x2="72.44" y2="897" stroke="#d8dee4"/>
+<line x1="77.86" y1="897" x2="83.73" y2="897" stroke="#d8dee4"/>
+<rect x="77.86" y="892.48" width="6.77" height="3.52" rx="1" fill="#975d34"><title>2026-07-21: 2 private</title></rect>
+<line x1="89.14" y1="897" x2="95.01" y2="897" stroke="#d8dee4"/>
+<line x1="100.43" y1="897" x2="106.30" y2="897" stroke="#d8dee4"/>
+<line x1="111.71" y1="897" x2="117.58" y2="897" stroke="#d8dee4"/>
+<line x1="123.00" y1="897" x2="128.87" y2="897" stroke="#d8dee4"/>
+<line x1="134.29" y1="897" x2="140.15" y2="897" stroke="#d8dee4"/>
+<line x1="145.57" y1="897" x2="151.44" y2="897" stroke="#d8dee4"/>
+<line x1="156.86" y1="897" x2="162.73" y2="897" stroke="#d8dee4"/>
+<rect x="156.86" y="890.72" width="6.77" height="5.28" rx="1" fill="#975d34"><title>2026-07-28: 3 private</title></rect>
+<line x1="168.14" y1="897" x2="174.01" y2="897" stroke="#d8dee4"/>
+<line x1="179.43" y1="897" x2="185.30" y2="897" stroke="#d8dee4"/>
+<line x1="190.71" y1="897" x2="196.58" y2="897" stroke="#d8dee4"/>
+<line x1="202.00" y1="897" x2="207.87" y2="897" stroke="#d8dee4"/>
+<line x1="213.29" y1="897" x2="219.15" y2="897" stroke="#d8dee4"/>
+<line x1="224.57" y1="897" x2="230.44" y2="897" stroke="#d8dee4"/>
+<line x1="235.86" y1="897" x2="241.73" y2="897" stroke="#d8dee4"/>
+<line x1="247.14" y1="897" x2="253.01" y2="897" stroke="#d8dee4"/>
+<line x1="258.43" y1="897" x2="264.30" y2="897" stroke="#d8dee4"/>
+<line x1="269.71" y1="897" x2="275.58" y2="897" stroke="#d8dee4"/>
+<line x1="281.00" y1="897" x2="286.87" y2="897" stroke="#d8dee4"/>
+<rect x="281.00" y="816.83" width="6.77" height="79.17" rx="1" fill="#975d34"><title>2026-08-08: 45 private</title></rect>
+<line x1="292.29" y1="897" x2="298.15" y2="897" stroke="#d8dee4"/>
+<rect x="292.29" y="859.06" width="6.77" height="36.94" rx="1" fill="#975d34"><title>2026-08-09: 21 private</title></rect>
+<line x1="303.57" y1="897" x2="309.44" y2="897" stroke="#d8dee4"/>
+<line x1="314.86" y1="897" x2="320.73" y2="897" stroke="#d8dee4"/>
+<line x1="326.14" y1="897" x2="332.01" y2="897" stroke="#d8dee4"/>
+<line x1="337.43" y1="897" x2="343.30" y2="897" stroke="#d8dee4"/>
+<line x1="348.71" y1="897" x2="354.58" y2="897" stroke="#d8dee4"/>
+<line x1="360.00" y1="897" x2="365.87" y2="897" stroke="#d8dee4"/>
+<line x1="371.29" y1="897" x2="377.15" y2="897" stroke="#d8dee4"/>
+<line x1="382.57" y1="897" x2="388.44" y2="897" stroke="#d8dee4"/>
+<line x1="393.86" y1="897" x2="399.73" y2="897" stroke="#d8dee4"/>
+<line x1="405.14" y1="897" x2="411.01" y2="897" stroke="#d8dee4"/>
+<line x1="416.43" y1="897" x2="422.30" y2="897" stroke="#d8dee4"/>
+<line x1="427.71" y1="897" x2="433.58" y2="897" stroke="#d8dee4"/>
+<line x1="439.00" y1="897" x2="444.87" y2="897" stroke="#d8dee4"/>
+<line x1="450.29" y1="897" x2="456.15" y2="897" stroke="#d8dee4"/>
+<line x1="461.57" y1="897" x2="467.44" y2="897" stroke="#d8dee4"/>
+<line x1="472.86" y1="897" x2="478.73" y2="897" stroke="#d8dee4"/>
+<line x1="484.14" y1="897" x2="490.01" y2="897" stroke="#d8dee4"/>
+<line x1="495.43" y1="897" x2="501.30" y2="897" stroke="#d8dee4"/>
+<line x1="506.71" y1="897" x2="512.58" y2="897" stroke="#d8dee4"/>
+<line x1="518.00" y1="897" x2="523.87" y2="897" stroke="#d8dee4"/>
+<rect x="518.00" y="894.24" width="6.77" height="1.76" rx="1" fill="#975d34"><title>2026-08-29: 1 private</title></rect>
+<line x1="529.29" y1="897" x2="535.15" y2="897" stroke="#d8dee4"/>
+<line x1="540.57" y1="897" x2="546.44" y2="897" stroke="#d8dee4"/>
+<line x1="551.86" y1="897" x2="557.73" y2="897" stroke="#d8dee4"/>
+<line x1="563.14" y1="897" x2="569.01" y2="897" stroke="#d8dee4"/>
+<line x1="574.43" y1="897" x2="580.30" y2="897" stroke="#d8dee4"/>
+<line x1="585.71" y1="897" x2="591.58" y2="897" stroke="#d8dee4"/>
+<line x1="597.00" y1="897" x2="602.87" y2="897" stroke="#d8dee4"/>
+<line x1="608.29" y1="897" x2="614.15" y2="897" stroke="#d8dee4"/>
+<line x1="619.57" y1="897" x2="625.44" y2="897" stroke="#d8dee4"/>
+<rect x="619.57" y="801.00" width="6.77" height="95.00" rx="1" fill="#975d34"><title>2026-09-07: 54 private</title></rect>
+<line x1="630.86" y1="897" x2="636.73" y2="897" stroke="#d8dee4"/>
+<line x1="642.14" y1="897" x2="648.01" y2="897" stroke="#d8dee4"/>
+<line x1="653.43" y1="897" x2="659.30" y2="897" stroke="#d8dee4"/>
+<line x1="664.71" y1="897" x2="670.58" y2="897" stroke="#d8dee4"/>
+<line x1="44" y1="934" x2="676" y2="934" stroke="#d8dee4"/>
+<text x="44" y="965" fill="#656d76" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="start">2026-07-18 — 2026-09-11</text>
+<text x="676" y="965" fill="#656d76" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" text-anchor="end">Daily counts / UTC</text>
+</svg>

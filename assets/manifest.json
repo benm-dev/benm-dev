@@ -1,0 +1,39 @@
+{
+  "snapshot_sha256": "ae773266d16f7b51d2068413cfa396f00318cae8dca97e5072b31bc73e4ec726",
+  "seed": "5da3fa0ecc7d92f18ba9a63ba5d071a3acbb0cb82792f9e0b83fb88127ef29af",
+  "captured_at": "2026-09-11T06:57:08.208Z",
+  "records_total": 1193,
+  "public": 38,
+  "private": 1155,
+  "window": [
+    "2026-07-18",
+    "2026-09-11"
+  ],
+  "geometry": {
+    "curve": "trefoil",
+    "frame": "parallel transport with distributed holonomy correction",
+    "daily_sections": 56,
+    "longitudinal_samples": 168,
+    "tube_sides": 32,
+    "radius_mapping": "0.26 + 0.25 * periodic_smooth(log1p(count) / max(1, max(log1p(count))))"
+  },
+  "animation": {
+    "frames": 96,
+    "duration_ms": 7680,
+    "camera": "orthographic"
+  },
+  "assets": {
+    "hero-dark.png": "2c968b36b5af8b2a55c72fe5a7095150fca6cf000cb409b57de8bc80f6a81861",
+    "hero-dark.webp": "53ddb73d247fedca7e108fbe35214c861297ba3500c6a4ff6ad805d9898ac020",
+    "hero-dark-mobile.png": "36714f177affcd29dc19a4ce1cb9d8048e6048ef962a613d5bdc6c03a0d3929b",
+    "hero-dark-mobile.webp": "a151f1729c273d76f3d251a060db4a3cb0eaa4c5e695f6cc8e5c2ec610e16e58",
+    "activity-dark.svg": "14c017ce5a0d07a53490dde242b59cf166d6cbcc06ef0008175b842a54395460",
+    "activity-dark-mobile.svg": "1ca952b1f416dd5537fc3a9204db06a483ef4295686b2cd8852a8eb55180cafe",
+    "hero-light.png": "5ef7e95656ec8d596d5f21df0840e5f6b8fa125b4aa88256d29e1eacf65c0635",
+    "hero-light.webp": "6f3e90abece92d1f9363dfa26ca440288fbe24517a5589352f3b4a51e288d8e2",
+    "hero-light-mobile.png": "988ab734263a3a0347b1e7a5326e1fefe316e7b043f757bef15fd24eb62c29dd",
+    "hero-light-mobile.webp": "1d4d8fd4303d835f48d85f101594b65912df83306fca0d1463c3e18310fefdbc",
+    "activity-light.svg": "0a555361023705b8a05ceb1f39368b4d37dfb9f01e36d5af9466eaf2e8e8902a",
+    "activity-light-mobile.svg": "2ab60ae36d81017632a571d1279dd311eb1d2272f6c004952028e1c21723e205"
+  }
+}

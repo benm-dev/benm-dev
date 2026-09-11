@@ -1,73 +1,69 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/banner.webp" width="100%" alt="Benjamin Marshall — animated generative field" />
-</p>
+<a href="./DESIGN.md">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.png" />
+    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/hero-light-mobile.png" />
+    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark.png" />
+    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-light.png" />
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.webp" />
+    <source media="(max-width: 600px)" srcset="./assets/hero-light-mobile.webp" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.webp" />
+    <img src="./assets/hero-light.webp" width="100%" alt="Benjamin Marshall — Sydney. Systems, clients and tools. A rotating trefoil shaped by an anonymised public and private activity snapshot; open the rendering notes." />
+  </picture>
+</a>
 
-# Benjamin Marshall
+[Work](#work) · [Rendering notes](./DESIGN.md) · [Source](./scripts/render_profile.py) · [Site](https://benm-dev.github.io)
 
-I build systems and clients: reproducible workstations, remote desktop tools, and local-first software. Based in Sydney; most of my work stays private.
+I work across Linux systems, remote desktop clients and developer tools. Most of my current work is private.
 
-**Stack** · Rust · Swift · Nix · TypeScript · Wayland · Python
+**Rust · Swift · Nix · TypeScript · Wayland · Python**
 
-## What I'm building
+## Work
 
-- **zerokelvin** · private, ongoing — my declarative NixOS workstation project. Complete system configuration, Wayland desktops, development environments, and remote access, with an emphasis on reproducible state and deliberate changes.
-- **Foldlight** · private, ongoing — a desktop-focused client for foldable Android devices, built on Moonlight Android. Sunshine streaming, touch input, and on-screen typing make the PC usable from a phone. Broader keyboard and desktop integration is still in development.
-- **Developer tooling** — application compatibility, agent and IDE integration, and automation around the workstation. I care about tools that work together and changes that can be checked.
+**Systems** — reproducible Linux workstations, declarative configuration, Wayland desktops and remote access.
 
-The wider goal: one capable desktop, accessible from a laptop or a foldable phone, with readable configuration and clear ownership of each component.
+**Interfaces** — desktop streaming for foldable devices, touch input and on-screen typing. Broader keyboard and desktop integration is in development.
 
-## Exploring
+**Developer tooling** — application compatibility, agent and IDE integration, and automation around the workstation.
 
-Component-based OS design inspired by Cordis: explicit dependencies, capabilities, and lifecycles for applications and system services. This is ongoing design work; the foundation and integration are still being worked out.
+**Exploring** — an OS component model that connects configuration, capabilities, ownership and runtime evidence. Architecture and design work in progress.
 
-## Public work
+## Activity
 
-- [Microsoft WSL #14081](https://github.com/microsoft/WSL/pull/14081) — proposed fix for loopback endpoint creation in mirrored networking. Currently an open draft PR.
+<a href="./activity.json">
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/activity-dark-mobile.svg" />
+    <source media="(max-width: 600px)" srcset="./assets/activity-light-mobile.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg" />
+    <img src="./assets/activity-light.svg" width="100%" alt="Public and private commit, pull request and issue activity. A dated aggregate across 56 days; open the data for exact daily counts." />
+  </picture>
+</a>
 
-[Explore the interactive field →](https://benm-dev.github.io)
+Daily totals shape the surface; copper increases with the private share. The export contains daily aggregates only.
 
-## Public activity
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/activity.svg" width="100%" alt="Public GitHub event snapshot shown as a 56-day density ribbon and waveform" />
-</p>
-
-A snapshot of sampled public GitHub events across a 56-day window. The generator fetches up to 100 events, so this is a partial view of activity. The data refreshes when the assets are regenerated.
-
-## In your terminal
-
-```bash
-curl -fsSL https://benm-dev.github.io/card
-```
+Commits are deduplicated across accessible owned repositories' default branches. Pull requests and issues count items I opened in the window. These are recorded actions under that scope, not GitHub's contribution-calendar total.
 
 <details>
-<summary>How the profile is built</summary>
+<summary>How the header works</summary>
 
-### Profile assets
+Each day controls one section of a 3D trefoil: activity controls its thickness and the public/private split controls its material. Parallel-transport frames, computed surface normals and directional lighting turn that geometry into a seamless WebP loop. The image adapts to screen width, color scheme and reduced-motion preferences through GitHub's native `<picture>` support.
 
-- [`banner.webp`](./banner.webp) — animated generative banner displayed above.
-- [`activity.svg`](./activity.svg) — event density ribbon and waveform.
-- [`seed.json`](./seed.json) — seed and event summary metadata.
-- [`activity.json`](./activity.json) — dated activity series used by the interactive site.
-
-The SVG generator derives its seed from the week and the latest sampled event ID.
-
-### Interactive site
-
-The [site](https://benm-dev.github.io) renders a pointer-reactive noise field in Canvas, with a scanning light, an animated activity panel, a Sydney clock, and an FPS readout. It loads a saved activity snapshot on page load.
-
-[View the site source](https://github.com/benm-dev/benm-dev.github.io).
-
-### Regenerate the SVGs and seed
-
-Requires Python 3 and an authenticated GitHub CLI (`gh`). The Python script uses only the standard library. From the repository root:
+The renderer runs locally from the checked-in snapshot. It needs no external image service or scheduled GitHub workflow.
 
 ```bash
-python3 scripts/gen_all.py
+python3 -m venv .venv
+. .venv/bin/activate
+python3 -m pip install -r requirements.txt
+python3 scripts/render_profile.py
 ```
 
-This overwrites `banner.svg`, `activity.svg`, and `seed.json`. The checked-in script does not regenerate `banner.webp`, `banner.png`, `activity.json`, or the terminal card, and does not sync assets to the site repository. Refresh those separately when updating the full profile.
+Use `--refresh` with existing local GitHub authentication to collect new public and private counts, or `--still` for static previews. Review and commit the generated assets to update the profile. The [manifest](./assets/manifest.json) records the input hash, geometry parameters and output hashes.
+
+The same mesh also runs live in a truecolor terminal:
+
+```bash
+python3 scripts/terminal.py
+```
+
+[Rendering notes](./DESIGN.md) · [Renderer](./scripts/render_profile.py) · [Collector](./scripts/collect_activity.py) · [Snapshot](./activity.json)
 
 </details>
-
-[Site](https://benm-dev.github.io) · [Activity data](./activity.json) · [Seed metadata](./seed.json)
