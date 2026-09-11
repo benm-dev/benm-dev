@@ -16,13 +16,13 @@
 <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/work-tab-dark-mobile.svg"/>
 <source media="(max-width: 640px)" srcset="./assets/enclosure/work-tab-light-mobile.svg"/>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/work-tab-dark.svg"/>
-<img src="./assets/enclosure/work-tab-light.svg" width="100%" alt="What I build. Expand for systems, interfaces, developer tooling and architecture."/>
+<img src="./assets/enclosure/work-tab-light.svg" width="100%" alt="What I build. Expand for Linux systems, remote interfaces, agent coordination, local AI research and system awareness."/>
 </picture></summary>
 <picture>
 <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/work-dark-mobile.svg"/>
 <source media="(max-width: 640px)" srcset="./assets/enclosure/work-light-mobile.svg"/>
 <source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/work-dark.svg"/>
-<img src="./assets/enclosure/work-light.svg" width="100%" alt="Systems: reproducible Linux, declarative configuration and remote access. Interfaces: foldable streaming, touch and on-screen typing. Developer tooling: compatibility, agents, IDE integration and automation. Exploring: component ownership and runtime evidence."/>
+<img src="./assets/enclosure/work-light.svg" width="100%" alt="Linux systems: Experience with RHEL infrastructure, offline patching and hardening. Building reproducible NixOS workstations with Wayland and remote access. Remote interfaces: Developing a touch-first desktop experience for unfolded phones: streaming, session-aware input, side gestures and on-screen typing. Agent coordination: Designing a PostgreSQL task ledger for coding agents: leased work, durable handoffs, isolated Git worktrees and serial integration. Local AI research: Exploring local model serving on a DGX Spark, memory reclamation between workloads and agent-driven image workflows. System awareness: Exploring how configuration, source, running components and functional checks connect, so people and coding agents can inspect the same system."/>
 </picture>
 </details>
 <details>

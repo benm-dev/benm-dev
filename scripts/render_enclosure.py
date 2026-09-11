@@ -149,30 +149,34 @@ def summary(name,m,t,index,title,sub):
     p.wrap(p.p+39,59,sub,p.w-p.p*2-39,15 if m else 16,line=23)
     return p
 
+WORK_SECTIONS = [
+    ('Linux systems', 'Experience with RHEL infrastructure, offline patching and hardening. Building reproducible NixOS workstations with Wayland and remote access.'),
+    ('Remote interfaces', 'Developing a touch-first desktop experience for unfolded phones: streaming, session-aware input, side gestures and on-screen typing.'),
+    ('Agent coordination', 'Designing a PostgreSQL task ledger for coding agents: leased work, durable handoffs, isolated Git worktrees and serial integration.'),
+    ('Local AI research', 'Exploring local model serving on a DGX Spark, memory reclamation between workloads and agent-driven image workflows.'),
+    ('System awareness', 'Exploring how configuration, source, running components and functional checks connect, so people and coding agents can inspect the same system.'),
+]
+
 def work(m,t):
-    p=Panel('work',m,t,758 if m else 600,'Current work: systems, interfaces, developer tooling and architecture in progress.')
-    sections=[
-        ('Systems','Reproducible Linux workstations, declarative configuration, Wayland desktops and remote access.'),
-        ('Interfaces','Desktop streaming for foldable devices, touch input and on-screen typing. Broader keyboard integration is in development.'),
-        ('Developer tooling','Application compatibility, agent and IDE integration, and automation around the workstation.'),
-        ('Exploring','An OS component model connecting configuration, capabilities, ownership and runtime evidence. Architecture in progress.'),
-    ]
-    for i,(title,copy) in enumerate(sections):
-        y=23+i*(174 if m else 129)
+    p=Panel('work',m,t,100,'Experience, development and research across Linux, remote interfaces and local AI.')
+    y=23
+    for i,(title,copy) in enumerate(WORK_SECTIONS):
         if m:
             p.text(p.p,y+23,title,23,weight=500,depth=True)
-            p.wrap(p.p,y+54,copy,p.w-2*p.p,17,line=26)
+            end=p.wrap(p.p,y+54,copy,p.w-2*p.p,17,line=26)
         else:
             p.add(f'<g transform="translate(96 {y+62}) scale(.63)" aria-hidden="true">')
             box(p,-66,-41,0,132,82,14)
-            box(p,-40,-19,20+6*i,80,38,8,style='blue' if i<3 else 'copper')
+            box(p,-40,-19,20+6*i,80,38,8,style='blue' if i<2 else 'copper')
             p.add('</g>')
             p.text(184,y+26,title,24,weight=500,depth=True)
-            p.wrap(184,y+57,copy,p.w-218,18,line=28)
-        if i<3:p.rule(y+(160 if m else 119))
-    p.text(p.p,p.h-31,'RUST · SWIFT · NIX',15,'muted')
-    if m:p.text(p.p,p.h-9,'TYPESCRIPT · WAYLAND · PYTHON',15,'muted')
-    else:p.text(241,p.h-31,'TYPESCRIPT · WAYLAND · PYTHON',15,'muted')
+            end=p.wrap(184,y+57,copy,p.w-218,18,line=28)
+        if i<len(WORK_SECTIONS)-1:p.rule(end+14)
+        y=end+30
+    p.text(p.p,y+12,'RUST · SWIFT · NIX',15,'muted')
+    if m:p.text(p.p,y+34,'TYPESCRIPT · WAYLAND · PYTHON',15,'muted')
+    else:p.text(241,y+12,'TYPESCRIPT · WAYLAND · PYTHON',15,'muted')
+    p.h=y+(58 if m else 36)
     return p
 
 def signal(m,t):
@@ -276,7 +280,7 @@ def picture(name,alt,inline=False):
 def content(inline=False):
     img=lambda name,alt:picture(name,alt,inline)
     section=lambda head,alt,body:'<details>\n<summary>'+img(head,alt)+'</summary>\n'+body+'\n</details>\n'
-    work_section=section('work-tab','What I build. Expand for systems, interfaces, developer tooling and architecture.',img('work','Systems: reproducible Linux, declarative configuration and remote access. Interfaces: foldable streaming, touch and on-screen typing. Developer tooling: compatibility, agents, IDE integration and automation. Exploring: component ownership and runtime evidence.'))
+    work_section=section('work-tab','What I build. Expand for Linux systems, remote interfaces, agent coordination, local AI research and system awareness.',img('work',' '.join(title+': '+copy for title,copy in WORK_SECTIONS)))
     signal_section=section('signal-tab','Follow a touch. Expand a conceptual remote input path.',img('signal','Conceptual path: touch input, connected session, compositor focus and application input.'))
     scope_section=section('scope-tab','What is counted. Expand the scope of the activity snapshot.',img('scope',SNAPSHOT['scope']+' '+SNAPSHOT['coverage']))
     metric_alt=' '.join(f'{label}: {sum(SNAPSHOT["metrics"][key]["public"]):,} public and {sum(SNAPSHOT["metrics"][key]["private"]):,} private.' for key,label in [('commits','Commits'),('pull_requests','Pull requests opened'),('issues','Issues opened')])
