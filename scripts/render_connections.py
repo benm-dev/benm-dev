@@ -197,7 +197,7 @@ def hero(snapshot, mobile, theme, animated=True):
         p.add('<g class="day-stats start-stats" aria-hidden="true">')
         stats(p, snapshot, -1, hub, actions, legend_y, date_y)
         p.add('</g>')
-        p.css.append(f'.start-stats{{animation:initial {DURATION:.2f}s steps(1,end)}}@keyframes initial{{0%,{100 * START / DURATION - .001:.5f}%{{opacity:1}}{100 * START / DURATION:.5f}%,100%{{opacity:0}}}}')
+        p.css.append(f'.start-stats{{animation:intro-counts {DURATION:.2f}s steps(1,end)}}@keyframes intro-counts{{0%,{100 * START / DURATION - .001:.5f}%{{opacity:1}}{100 * START / DURATION:.5f}%,100%{{opacity:0}}}}')
         for day in range(56):
             start = 100 * (START + day * DAY_SECONDS) / DURATION
             stop = 100 * (START + (day + 1) * DAY_SECONDS) / DURATION
