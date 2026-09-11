@@ -1,9 +1,13 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/banner.svg" width="100%" alt="Benjamin Marshall — generative field" />
+  <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/banner.webp" width="100%" alt="Benjamin Marshall — living generative field" />
 </p>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/activity.svg" width="100%" alt="Public activity density field" />
+</p>
+
+<p align="center">
+  <b>Living version</b> (pointer-reactive field + live signal) → <a href="https://benm-dev.github.io">benm-dev.github.io</a>
 </p>
 
 Systems and clients — remote workstations, declarative hosts, local-first tools. Most of it stays private.
@@ -15,15 +19,25 @@ curl -sL https://benm-dev.github.io/card
 ```
 
 <details>
-<summary>How this profile is built</summary>
+<summary>How this is built (not static)</summary>
 
-- **Living field** — SVG `feTurbulence` + diffuse lighting; `baseFrequency` and light azimuth animate (no JS).
-- **Tile-spiral** — abstract column geometry (compositor language, no window chrome).
-- **Public signal** — last 56 days of *public* GitHub events as a density ribbon + waveform (not the green contrib grid).
-- **Seed** — `sha256(iso-week + latest public event id)` written into SVG `<metadata>` and `seed.json`.
-- **Dual surface** — same identity as truecolor ANSI via the curl card.
-- **Regenerate** — `python3 scripts/gen_all.py` (needs `gh`).
+### Profile (README)
+- **Animated WebP banner** — 36-frame fBm noise field + aurora + breathing tile-spiral, seeded from \`sha256(iso-week + latest public event id)\`. GitHub freezes SVG SMIL in the README, so motion is baked into WebP.
+- **Activity SVG** — 56-day public-event density ribbon + waveform (not contrib squares), from the GitHub Events API.
+- **seed.json / activity.json** — machine-readable seed + series for regenerators and the live site.
+
+### Live site
+- Fullscreen **pointer-reactive fBm field** (Canvas, continuous).
+- **Scrolling scan** + light that follows the cursor.
+- **Public signal panel** animates the same 56-day series with a moving playhead.
+- Sydney clock · FPS · truecolor \`/card\` for terminals.
+
+### Regenerate
+\`\`\`bash
+python3 scripts/gen_all.py          # svg + json
+# animated webp via local tooling (Pillow/numpy) when available
+\`\`\`
 
 </details>
 
-[site](https://benm-dev.github.io) · [seed.json](./seed.json)
+[site](https://benm-dev.github.io) · [activity.json](./activity.json) · [seed.json](./seed.json)
