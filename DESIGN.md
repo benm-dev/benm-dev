@@ -55,11 +55,12 @@ render static previews; the map remains readable in those cases.
 
 | Layout | Appearance | Replay | Reduced motion |
 | --- | --- | --- | --- |
-| Desktop, 736 × 650 | Dark | `map-dark.svg` | `map-still-dark.svg` |
-| Desktop, 736 × 650 | Light | `map-light.svg` | `map-still-light.svg` |
-| Mobile, 360 × 774 | Dark | `map-dark-mobile.svg` | `map-still-dark-mobile.svg` |
-| Mobile, 360 × 774 | Light | `map-light-mobile.svg` | `map-still-light-mobile.svg` |
+| Desktop, 736 × 1000 | Dark | `map-dark.svg` | `map-still-dark.svg` |
+| Desktop, 736 × 1000 | Light | `map-light.svg` | `map-still-light.svg` |
+| Mobile, 360 × 1160 | Dark | `map-dark-mobile.svg` | `map-still-dark-mobile.svg` |
+| Mobile, 360 × 1160 | Light | `map-light-mobile.svg` | `map-still-light-mobile.svg` |
 
+The branches are staggered vertically, carrying the network farther down the page.
 The mobile source breakpoint is a 640-pixel viewport. Mobile nodes and labels
 are repositioned, rather than shrinking the desktop layout wholesale. Color
 selection follows the viewer's reported color-scheme preference. Essential

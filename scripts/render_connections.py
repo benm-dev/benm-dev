@@ -137,20 +137,29 @@ def stats(p, snapshot, day, hub, actions, legend_y, date_y):
 
 
 def hero(snapshot, mobile, theme, animated=True):
-    p = SVG(mobile, theme, 774 if mobile else 650, "Ben Marshall. " + INTRO + " Recorded GitHub activity: " + date_range(snapshot) + ".")
+    p = SVG(mobile, theme, 1160 if mobile else 1000, "Ben Marshall. " + INTRO + " Recorded GitHub activity: " + date_range(snapshot) + ".")
     p.text(p.p, 33, "BENM-DEV", 12, "muted")
     p.text(p.w - p.p, 33, "SYDNEY", 12, "muted", "end")
     p.text(p.p, 87, "Ben Marshall", 36 if mobile else 43, weight=500, depth=True)
     p.wrap(p.p, 118, INTRO, size=16, leading=25)
-    oy, h = (157, 492) if mobile else (131, 420)
+    oy, h = (157, 878) if mobile else (131, 770)
     hub = (p.w * .5, oy + h * .47)
-    domains = [(p.w * .24, oy + 74), (p.w * .76, oy + 74), (p.w * .16, hub[1] + 108), (p.w * .84, hub[1] + 108)] if mobile else [(p.w * .27, oy + 70), (p.w * .73, oy + 70), (p.w * .22, oy + h * .64), (p.w * .78, oy + h * .64)]
+    # Stagger the branches down the page so the network uses the taller canvas.
+    columns = (.24, .76, .16, .84) if mobile else (.27, .73, .20, .80)
+    domains = [(p.w * column, oy + h * level) for column, level in zip(columns, (.12, .28, .64, .77))]
     leaf_labels = [("Users", "Community"), ("Linux", "Networks" if mobile else "Networking"), ("Apps" if mobile else "Interfaces", "Tools" if mobile else "Developer tools"), ("Models" if mobile else "Local models", "Agents")]
     leaves = []
     for i, node in enumerate(domains):
-        p.add(f'<path d="{route(hub, node)}" fill="none" stroke="{p.c["line"]}" stroke-width="1.3" stroke-dasharray="3 5"/>')
+        context_path = route(hub, node)
+        if i >= 2:
+            # Leave the hub sideways so tall curves clear the counter and label.
+            port_x = hub[0] + (-39 if i % 2 == 0 else 39)
+            middle = (hub[1] + node[1]) / 2
+            context_path = f'M{port_x:.2f} {hub[1]:.2f}C{node[0]:.2f} {hub[1]:.2f} {node[0]:.2f} {middle:.2f} {node[0]:.2f} {node[1]:.2f}'
+        p.add(f'<path d="{context_path}" fill="none" stroke="{p.c["line"]}" stroke-width="1.3" stroke-dasharray="3 5"/>')
         for j, shift in enumerate((-39, 39)):
-            leaf = (node[0] + (-25 if i % 2 == 0 else 25), node[1] + shift)
+            leaf_offset = 48 if not mobile and i == 3 else 25
+            leaf = (node[0] + (-leaf_offset if i % 2 == 0 else leaf_offset), node[1] + shift)
             p.add(f'<path d="{route(node, leaf)}" fill="none" stroke="{p.c["line"]}" stroke-width="1" stroke-dasharray="3 5"/>')
             leaves.append((leaf, leaf_labels[i][j]))
     actions = [(p.w * x, oy + h - 42) for x in (.16, .5, .84)]
