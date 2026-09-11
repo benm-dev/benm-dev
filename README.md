@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="session.svg" alt="Benjamin Marshall — live session" width="100%" />
+  <img src="https://raw.githubusercontent.com/benm-dev/benm-dev/main/session.svg" alt="Benjamin Marshall — live session" width="100%" />
 
   <p>
     <b>Benjamin Marshall</b> · Sydney<br/>
