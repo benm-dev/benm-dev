@@ -1,7 +1,8 @@
 # Connected profile
 
 The README is one connected map. Identity, people and topic branches, commits,
-pull requests, issues, and public/private totals share a single SVG composition.
+pull requests and issues share a single SVG composition. Activity totals include
+public and private work; their visibility breakdown is in the image description.
 There are no work sections, disclosures, badges, or repository lists.
 
 ## What the map means
@@ -31,7 +32,8 @@ writing output. Rendering is offline and never reads credentials.
 snapshot into SVG paths and CSS keyframes. The 56 days advance in 0.36-second
 steps after a 0.8-second lead-in. Cumulative values advance through each recorded day;
 the 21.46-second sequence plays once and settles on the complete snapshot.
-The date range is retained in the image description, rather than the visible footer.
+The map ends at the three activity counts, with no footer, date labels or
+public/private summary row. The date range is retained in the image description.
 
 For each day, metric and visibility, up to three pulses share the recorded
 count. Integer pulse weights sum exactly to that count. Pulse thickness grows
@@ -56,16 +58,18 @@ render static previews; the map remains readable in those cases.
 
 | Layout | Appearance | Replay | Reduced motion |
 | --- | --- | --- | --- |
-| Desktop, 736 × 990 | Dark | `map-dark.svg` | `map-still-dark.svg` |
-| Desktop, 736 × 990 | Light | `map-light.svg` | `map-still-light.svg` |
-| Mobile, 360 × 1124 | Dark | `map-dark-mobile.svg` | `map-still-dark-mobile.svg` |
-| Mobile, 360 × 1124 | Light | `map-light-mobile.svg` | `map-still-light-mobile.svg` |
+| Desktop, 736 × 909 | Dark | `map-dark.svg` | `map-still-dark.svg` |
+| Desktop, 736 × 909 | Light | `map-light.svg` | `map-still-light.svg` |
+| Mobile, 360 × 1043 | Dark | `map-dark-mobile.svg` | `map-still-dark-mobile.svg` |
+| Mobile, 360 × 1043 | Light | `map-light-mobile.svg` | `map-still-light-mobile.svg` |
 
 The branches are staggered vertically, carrying the network farther down the page.
 The mobile source breakpoint is a 640-pixel viewport. Mobile nodes and labels
 are repositioned, rather than shrinking the desktop layout wholesale. Color
 selection follows the viewer's reported color-scheme preference. Essential
 information is also available in the image's text alternative.
+Each README image URL includes a content-hash version, so an asset change also
+updates the README and its image cache key.
 
 ## Reproduce and refresh
 

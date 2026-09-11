@@ -1,6 +1,7 @@
 """Data fidelity and fallback guarantees for the connected profile."""
 import collections
 import copy
+import hashlib
 import json
 from pathlib import Path
 import sys
@@ -57,7 +58,9 @@ class ConnectedProfileTests(unittest.TestCase):
         self.assertNotIn("<details", self.files["README.md"])
         for source in list(root):
             path = source.get("srcset") or source.get("src")
-            self.assertIn(path.removeprefix("./"), self.files)
+            asset, version = path.removeprefix("./").split("?v=")
+            self.assertIn(asset, self.files)
+            self.assertEqual(version, hashlib.sha256(self.files[asset].encode()).hexdigest()[:12])
         sources = root.findall("source")
         self.assertTrue(all("prefers-reduced-motion" in x.get("media") for x in sources[:4]))
 
