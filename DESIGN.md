@@ -29,8 +29,9 @@ writing output. Rendering is offline and never reads credentials.
 
 [`scripts/render_connections.py`](./scripts/render_connections.py) compiles the
 snapshot into SVG paths and CSS keyframes. The 56 days advance in 0.36-second
-steps after a 0.8-second lead-in. Cumulative values follow each displayed date;
+steps after a 0.8-second lead-in. Cumulative values advance through each recorded day;
 the 21.46-second sequence plays once and settles on the complete snapshot.
+The date range is retained in the image description, rather than the visible footer.
 
 For each day, metric and visibility, up to three pulses share the recorded
 count. Integer pulse weights sum exactly to that count. Pulse thickness grows
@@ -55,10 +56,10 @@ render static previews; the map remains readable in those cases.
 
 | Layout | Appearance | Replay | Reduced motion |
 | --- | --- | --- | --- |
-| Desktop, 736 × 1000 | Dark | `map-dark.svg` | `map-still-dark.svg` |
-| Desktop, 736 × 1000 | Light | `map-light.svg` | `map-still-light.svg` |
-| Mobile, 360 × 1160 | Dark | `map-dark-mobile.svg` | `map-still-dark-mobile.svg` |
-| Mobile, 360 × 1160 | Light | `map-light-mobile.svg` | `map-still-light-mobile.svg` |
+| Desktop, 736 × 990 | Dark | `map-dark.svg` | `map-still-dark.svg` |
+| Desktop, 736 × 990 | Light | `map-light.svg` | `map-still-light.svg` |
+| Mobile, 360 × 1124 | Dark | `map-dark-mobile.svg` | `map-still-dark-mobile.svg` |
+| Mobile, 360 × 1124 | Light | `map-light-mobile.svg` | `map-still-light-mobile.svg` |
 
 The branches are staggered vertically, carrying the network farther down the page.
 The mobile source breakpoint is a 640-pixel viewport. Mobile nodes and labels

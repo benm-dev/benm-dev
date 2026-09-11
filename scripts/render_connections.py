@@ -126,18 +126,17 @@ def route(a, b):
     return f"M{a[0]:.2f} {a[1]:.2f}C{a[0]:.2f} {middle:.2f} {b[0]:.2f} {middle:.2f} {b[0]:.2f} {b[1]:.2f}"
 
 
-def stats(p, snapshot, day, hub, actions, legend_y, date_y):
+def stats(p, snapshot, day, hub, actions, legend_y):
     values = totals(snapshot, day)
     p.text(hub[0], hub[1] + 65, f"{values['total']:,}", 23, anchor="middle")
     for i, (x, y) in enumerate(actions):
         p.text(x, y, f"{values['kinds'][i]:,}", 25, anchor="middle")
     p.text(p.p + 15, legend_y, f"{values['public']:,} public", 14)
     p.text(p.p + (144 if p.mobile else 155), legend_y, f"{values['private']:,} private", 14)
-    p.text(p.w - p.p, date_y, label_date(snapshot["days"][max(day, 0)], True), 13, "muted", "end")
 
 
 def hero(snapshot, mobile, theme, animated=True):
-    p = SVG(mobile, theme, 1160 if mobile else 1000, "Ben Marshall. " + INTRO + " Recorded GitHub activity: " + date_range(snapshot) + ".")
+    p = SVG(mobile, theme, 1124 if mobile else 990, "Ben Marshall. " + INTRO + " Recorded GitHub activity: " + date_range(snapshot) + ".")
     p.text(p.p, 33, "BENM-DEV", 12, "muted")
     p.text(p.w - p.p, 33, "SYDNEY", 12, "muted", "end")
     p.text(p.p, 87, "Ben Marshall", 36 if mobile else 43, weight=500, depth=True)
@@ -186,25 +185,21 @@ def hero(snapshot, mobile, theme, animated=True):
         p.text(ax, ay + 23, KINDS[i][1], 12 if mobile else 13, "muted", "middle")
     line_y = oy + h + 5
     legend_y = line_y + 31
-    date_y = line_y + (58 if mobile else 31)
     p.line(line_y)
     p.circle(p.p + 3, legend_y - 5, 3, "public", "none")
     square_x = p.p + (128 if mobile else 139)
     p.add(f'<rect x="{square_x}" y="{legend_y - 8}" width="6" height="6" fill="{p.c["private"]}"/>')
     p.add('<g class="snapshot">')
-    stats(p, snapshot, 55, hub, actions, legend_y, date_y)
+    stats(p, snapshot, 55, hub, actions, legend_y)
     p.add('</g>')
-    if mobile:
-        p.text(p.p, date_y, "Snapshot through", 13, "muted")
-    p.text(p.p, line_y + (86 if mobile else 60), date_range(snapshot) + " · 56 UTC days", 12, "muted")
-    p.text(p.p, line_y + (109 if mobile else 83), "Counted activity · illustrative connections", 12, "muted")
+    p.text(p.p, line_y + 60, "Counted activity · illustrative connections", 12, "muted")
     # The static snapshot is the default markup. Animation is an enhancement;
     # disabling CSS animation or requesting reduced motion shows the full totals.
     if animated:
         end = 100 * (START + 56 * DAY_SECONDS) / DURATION
         p.css.append(f'.snapshot{{animation:snapshot {DURATION:.2f}s steps(1,end)}}@keyframes snapshot{{0%,{end - .001:.5f}%{{opacity:0}}{end:.5f}%,100%{{opacity:1}}}}')
         p.add('<g class="day-stats start-stats" aria-hidden="true">')
-        stats(p, snapshot, -1, hub, actions, legend_y, date_y)
+        stats(p, snapshot, -1, hub, actions, legend_y)
         p.add('</g>')
         p.css.append(f'.start-stats{{animation:intro-counts {DURATION:.2f}s steps(1,end)}}@keyframes intro-counts{{0%,{100 * START / DURATION - .001:.5f}%{{opacity:1}}{100 * START / DURATION:.5f}%,100%{{opacity:0}}}}')
         for day in range(56):
@@ -212,7 +207,7 @@ def hero(snapshot, mobile, theme, animated=True):
             stop = 100 * (START + (day + 1) * DAY_SECONDS) / DURATION
             p.css.append(f'.d{day}{{animation:day{day} {DURATION:.2f}s steps(1,end)}}@keyframes day{day}{{0%,{start - .001:.5f}%{{opacity:0}}{start:.5f}%,{stop - .001:.5f}%{{opacity:1}}{stop:.5f}%,100%{{opacity:0}}}}')
             p.add(f'<g class="day-stats d{day}" aria-hidden="true">')
-            stats(p, snapshot, day, hub, actions, legend_y, date_y)
+            stats(p, snapshot, day, hub, actions, legend_y)
             p.add('</g>')
         for i, packet in enumerate(packets(snapshot)):
             begin = START + packet.day * DAY_SECONDS + packet.ordinal * .035
