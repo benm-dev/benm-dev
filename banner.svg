@@ -2,38 +2,38 @@
   <title>Benjamin Marshall</title>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="hsl(208 25% 5% / 1.000)"/>
-      <stop offset="100%" stop-color="hsl(220 30% 9% / 1.000)"/>
+      <stop offset="0%" stop-color="hsl(227 25% 5% / 1.000)"/>
+      <stop offset="100%" stop-color="hsl(239 30% 9% / 1.000)"/>
     </linearGradient>
     <filter id="field" x="-20%" y="-40%" width="140%" height="180%" color-interpolation-filters="sRGB">
-      <feTurbulence type="fractalNoise" baseFrequency="0.00995" numOctaves="4" seed="8084" result="noise"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.00816" numOctaves="4" seed="4254" result="noise"/>
       <feGaussianBlur in="noise" stdDeviation="0.6" result="soft"/>
       <feColorMatrix in="soft" type="matrix" values="
         0 0 0 0 0.15
         0 0 0 0 0.25
         0 0 0 0 0.45
-        0 0 0 0.416 0" result="tint"/>
-      <feDiffuseLighting in="soft" lighting-color="hsl(218 40% 70% / 1.000)" surfaceScale="4.95" result="lit">
-        <feDistantLight azimuth="75" elevation="56"/>
+        0 0 0 0.372 0" result="tint"/>
+      <feDiffuseLighting in="soft" lighting-color="hsl(237 40% 70% / 1.000)" surfaceScale="2.85" result="lit">
+        <feDistantLight azimuth="47" elevation="67"/>
       </feDiffuseLighting>
       <feBlend in="lit" in2="tint" mode="screen" result="mix"/>
       <feGaussianBlur in="mix" stdDeviation="8" result="haze"/>
       <feBlend in="haze" in2="SourceGraphic" mode="soft-light"/>
     </filter>
-    <radialGradient id="g1" cx="734" cy="25" r="420" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="hsl(228 42% 55% / 0.220)"/>
-      <stop offset="100%" stop-color="hsl(228 42% 55% / 0.220)" stop-opacity="0"/>
+    <radialGradient id="g1" cx="620" cy="76" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="hsl(247 37% 55% / 0.220)"/>
+      <stop offset="100%" stop-color="hsl(247 37% 55% / 0.220)" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="g2" cx="253" cy="170" r="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="hsl(187 37% 50% / 0.140)"/>
-      <stop offset="100%" stop-color="hsl(187 37% 50% / 0.140)" stop-opacity="0"/>
+    <radialGradient id="g2" cx="284" cy="159" r="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="hsl(186 33% 50% / 0.140)"/>
+      <stop offset="100%" stop-color="hsl(186 33% 50% / 0.140)" stop-opacity="0"/>
     </radialGradient>
   </defs>
   <rect width="1100" height="220" fill="url(#bg)"/>
   <rect width="1100" height="220" filter="url(#field)" opacity="0.85"/>
   <rect width="1100" height="220" fill="url(#g1)"/>
   <rect width="1100" height="220" fill="url(#g2)"/>
-  <rect x="0" y="0" width="4" height="220" fill="hsl(238 55% 68% / 0.950)"/>
-  <text x="48" y="96" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="600" fill="hsl(208 10% 93% / 1.000)" letter-spacing="-0.03em">Benjamin Marshall</text>
-  <text x="48" y="132" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="hsl(208 12% 62% / 1.000)">Sydney</text>
+  <rect x="0" y="0" width="4" height="220" fill="hsl(257 55% 68% / 0.950)"/>
+  <text x="48" y="96" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="34" font-weight="600" fill="hsl(227 10% 93% / 1.000)" letter-spacing="-0.03em">Benjamin Marshall</text>
+  <text x="48" y="132" font-family="ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif" font-size="15" fill="hsl(227 12% 62% / 1.000)">Sydney</text>
 </svg>
