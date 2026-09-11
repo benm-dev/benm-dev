@@ -1,0 +1,25 @@
+{
+  "seed": "4621b55103927325f4022b443af1e0996918b977f1484136cb01b41b75dbbab3",
+  "week": "2026-36",
+  "events_sampled": 100,
+  "series_days": 56,
+  "series_sum": 100,
+  "top_types": [
+    [
+      "PushEvent",
+      61
+    ],
+    [
+      "CreateEvent",
+      28
+    ],
+    [
+      "PullRequestEvent",
+      8
+    ],
+    [
+      "ReleaseEvent",
+      3
+    ]
+  ]
+}
