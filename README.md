@@ -1,69 +1,91 @@
-<a href="./DESIGN.md">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.png" />
-    <source media="(prefers-reduced-motion: reduce) and (max-width: 600px)" srcset="./assets/hero-light-mobile.png" />
-    <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark.png" />
-    <source media="(prefers-reduced-motion: reduce)" srcset="./assets/hero-light.png" />
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/hero-dark-mobile.webp" />
-    <source media="(max-width: 600px)" srcset="./assets/hero-light-mobile.webp" />
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.webp" />
-    <img src="./assets/hero-light.webp" width="100%" alt="Benjamin Marshall — Sydney. Systems, clients and tools. A rotating trefoil shaped by an anonymised public and private activity snapshot; open the rendering notes." />
-  </picture>
-</a>
-
-[Work](#work) · [Rendering notes](./DESIGN.md) · [Source](./scripts/render_profile.py) · [Site](https://benm-dev.github.io)
-
-I work across Linux systems, remote desktop clients and developer tools. Most of my current work is private.
-
-**Rust · Swift · Nix · TypeScript · Wayland · Python**
-
-## Work
-
-**Systems** — reproducible Linux workstations, declarative configuration, Wayland desktops and remote access.
-
-**Interfaces** — desktop streaming for foldable devices, touch input and on-screen typing. Broader keyboard and desktop integration is in development.
-
-**Developer tooling** — application compatibility, agent and IDE integration, and automation around the workstation.
-
-**Exploring** — an OS component model that connects configuration, capabilities, ownership and runtime evidence. Architecture and design work in progress.
-
-## Activity
-
-<a href="./activity.json">
-  <picture>
-    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/activity-dark-mobile.svg" />
-    <source media="(max-width: 600px)" srcset="./assets/activity-light-mobile.svg" />
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg" />
-    <img src="./assets/activity-light.svg" width="100%" alt="Public and private commit, pull request and issue activity. A dated aggregate across 56 days; open the data for exact daily counts." />
-  </picture>
-</a>
-
-Daily totals shape the surface; copper increases with the private share. The export contains daily aggregates only.
-
-Commits are deduplicated across accessible owned repositories' default branches. Pull requests and issues count items I opened in the window. These are recorded actions under that scope, not GitHub's contribution-calendar total.
-
+<picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/identity-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/identity-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/identity-dark.svg"/>
+<img src="./assets/enclosure/identity-light.svg" width="100%" alt="Ben Marshall, Sydney. Linux systems, remote interfaces and developer tools."/>
+</picture>
 <details>
-<summary>How the header works</summary>
-
-Each day controls one section of a 3D trefoil: activity controls its thickness and the public/private split controls its material. Parallel-transport frames, computed surface normals and directional lighting turn that geometry into a seamless WebP loop. The image adapts to screen width, color scheme and reduced-motion preferences through GitHub's native `<picture>` support.
-
-The renderer runs locally from the checked-in snapshot. It needs no external image service or scheduled GitHub workflow.
-
-```bash
-python3 -m venv .venv
-. .venv/bin/activate
-python3 -m pip install -r requirements.txt
-python3 scripts/render_profile.py
-```
-
-Use `--refresh` with existing local GitHub authentication to collect new public and private counts, or `--still` for static previews. Review and commit the generated assets to update the profile. The [manifest](./assets/manifest.json) records the input hash, geometry parameters and output hashes.
-
-The same mesh also runs live in a truecolor terminal:
-
-```bash
-python3 scripts/terminal.py
-```
-
-[Rendering notes](./DESIGN.md) · [Renderer](./scripts/render_profile.py) · [Collector](./scripts/collect_activity.py) · [Snapshot](./activity.json)
+<summary><picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/cover-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/cover-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/cover-dark.svg"/>
+<img src="./assets/enclosure/cover-light.svg" width="100%" alt="Open the enclosure. Explore work, input and activity."/>
+</picture></summary>
+<details>
+<summary><picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/work-tab-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/work-tab-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/work-tab-dark.svg"/>
+<img src="./assets/enclosure/work-tab-light.svg" width="100%" alt="What I build. Expand for systems, interfaces, developer tooling and architecture."/>
+</picture></summary>
+<picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/work-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/work-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/work-dark.svg"/>
+<img src="./assets/enclosure/work-light.svg" width="100%" alt="Systems: reproducible Linux, declarative configuration and remote access. Interfaces: foldable streaming, touch and on-screen typing. Developer tooling: compatibility, agents, IDE integration and automation. Exploring: component ownership and runtime evidence."/>
+</picture>
+</details>
+<details>
+<summary><picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/signal-tab-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/signal-tab-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/signal-tab-dark.svg"/>
+<img src="./assets/enclosure/signal-tab-light.svg" width="100%" alt="Follow a touch. Expand a conceptual remote input path."/>
+</picture></summary>
+<picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/signal-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/signal-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/signal-dark.svg"/>
+<img src="./assets/enclosure/signal-light.svg" width="100%" alt="Conceptual path: touch input, connected session, compositor focus and application input."/>
+</picture>
+</details>
+<details>
+<summary><picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/activity-tab-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/activity-tab-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/activity-tab-dark.svg"/>
+<img src="./assets/enclosure/activity-tab-light.svg" width="100%" alt="Look below the surface. Open the public and private activity snapshot."/>
+</picture></summary>
+<picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/public-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/public-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/public-dark.svg"/>
+<img src="./assets/enclosure/public-light.svg" width="100%" alt="38 public actions. 18 Jul – 11 Sep 2026. One pillar for each of 56 days."/>
+</picture><details>
+<summary><picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/private-tab-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/private-tab-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/private-tab-dark.svg"/>
+<img src="./assets/enclosure/private-tab-light.svg" width="100%" alt="Lift the private layer. Reveal 1,155 private recorded actions."/>
+</picture></summary>
+<picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/private-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/private-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/private-dark.svg"/>
+<img src="./assets/enclosure/private-light.svg" width="100%" alt="1,155 private actions; 1,193 total. Commits: 38 public and 764 private. Pull requests opened: 0 public and 259 private. Issues opened: 0 public and 132 private."/>
+</picture><details>
+<summary><picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/scope-tab-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/scope-tab-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/scope-tab-dark.svg"/>
+<img src="./assets/enclosure/scope-tab-light.svg" width="100%" alt="What is counted. Expand the scope of the activity snapshot."/>
+</picture></summary>
+<picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/scope-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/scope-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/scope-dark.svg"/>
+<img src="./assets/enclosure/scope-light.svg" width="100%" alt="Unique commits authored by benm-dev on default branches of accessible owned repositories pushed within this window; issues and pull requests authored by benm-dev and opened within this window across accessible repositories. Fork duplicates are counted once, as public if present in a public repository. Snapshot of records visible to the authenticated connection; not GitHub&#x27;s contribution-calendar total. Dates use UTC. Repository names, commit IDs, titles, bodies and source payloads are omitted."/>
+</picture>
+</details>
 
 </details>
+
+</details>
+
+</details>
+<picture>
+<source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="./assets/enclosure/footer-dark-mobile.svg"/>
+<source media="(max-width: 640px)" srcset="./assets/enclosure/footer-light-mobile.svg"/>
+<source media="(prefers-color-scheme: dark)" srcset="./assets/enclosure/footer-dark.svg"/>
+<img src="./assets/enclosure/footer-light.svg" width="100%" alt="Most current work is private. Explore its systems and interfaces."/>
+</picture>
