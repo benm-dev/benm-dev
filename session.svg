@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="420" viewBox="0 0 1100 420" role="img" aria-label="Benjamin Marshall session">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#07090f"/>
+      <stop offset="55%" stop-color="#0b1020"/>
+      <stop offset="100%" stop-color="#071018"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8eb6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8eb6ff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#6ef3c5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#161b2c" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0d1220" stop-opacity="0.92"/>
+    </linearGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="frame"><rect x="24" y="24" width="1052" height="372" rx="18"/></clipPath>
+  </defs>
+
+  <!-- desk -->
+  <rect width="1100" height="420" fill="url(#bg)"/>
+  <circle cx="920" cy="40" r="160" fill="#3d5cff" opacity="0.18" filter="url(#soft)"/>
+  <circle cx="160" cy="380" r="140" fill="#2dd4a8" opacity="0.10" filter="url(#soft)"/>
+
+  <!-- outer chrome -->
+  <rect x="24" y="24" width="1052" height="372" rx="18" fill="#0a0d16" stroke="#2a3348" stroke-width="1.2"/>
+  <rect x="24" y="24" width="1052" height="34" rx="18" fill="#101526"/>
+  <rect x="24" y="42" width="1052" height="16" fill="#101526"/>
+  <circle cx="48" cy="41" r="5" fill="#ff5f57"/>
+  <circle cx="66" cy="41" r="5" fill="#febc2e"/>
+  <circle cx="84" cy="41" r="5" fill="#28c840"/>
+  <text x="550" y="46" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#8b95ad">wl-session · benm-dev@sydney</text>
+
+  <g clip-path="url(#frame)">
+    <!-- scan beam -->
+    <rect x="24" width="1052" height="54" fill="url(#scan)" opacity="0.9">
+      <animate attributeName="y" values="24;380;24" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- left window: about -->
+    <g transform="translate(52,78)">
+      <rect width="420" height="210" rx="12" fill="url(#glass)" stroke="#3a4663" stroke-width="1"/>
+      <rect width="420" height="28" rx="12" fill="#141a2b"/>
+      <rect y="14" width="420" height="14" fill="#141a2b"/>
+      <circle cx="16" cy="14" r="3.5" fill="#6b728a"/>
+      <circle cx="28" cy="14" r="3.5" fill="#6b728a"/>
+      <circle cx="40" cy="14" r="3.5" fill="#6b728a"/>
+      <text x="56" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8b95ad">about</text>
+      <text x="20" y="58" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="600" fill="#e8edf8">Benjamin Marshall</text>
+      <text x="20" y="88" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#8b95ad">Sydney · systems · clients · tooling</text>
+
+      <!-- typing line -->
+      <text x="20" y="128" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#8eb6ff">$</text>
+      <text x="34" y="128" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#c9d4ea">
+        <tspan>building remote workstations</tspan>
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.12;0.18;1" dur="4.5s" repeatCount="indefinite"/>
+      </text>
+      <rect x="268" y="116" width="8" height="14" fill="#6ef3c5">
+        <animate attributeName="opacity" values="1;0;1" dur="1.05s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="34;34;268;268" keyTimes="0;0.12;0.55;1" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+
+      <text x="20" y="162" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" fill="#9aa3b8">Most work stays private. This profile is the public edge.</text>
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11">
+        <rect x="20" y="178" width="52" height="20" rx="10" fill="#152038" stroke="#334063"/>
+        <text x="46" y="192" text-anchor="middle" fill="#8eb6ff">Rust</text>
+        <rect x="80" y="178" width="58" height="20" rx="10" fill="#152038" stroke="#334063"/>
+        <text x="109" y="192" text-anchor="middle" fill="#8eb6ff">Swift</text>
+        <rect x="146" y="178" width="46" height="20" rx="10" fill="#152038" stroke="#334063"/>
+        <text x="169" y="192" text-anchor="middle" fill="#8eb6ff">Nix</text>
+        <rect x="200" y="178" width="72" height="20" rx="10" fill="#152038" stroke="#334063"/>
+        <text x="236" y="192" text-anchor="middle" fill="#8eb6ff">Wayland</text>
+      </g>
+    </g>
+
+    <!-- right window: journal -->
+    <g transform="translate(500,78)">
+      <rect width="540" height="270" rx="12" fill="url(#glass)" stroke="#3a4663" stroke-width="1"/>
+      <rect width="540" height="28" rx="12" fill="#141a2b"/>
+      <rect y="14" width="540" height="14" fill="#141a2b"/>
+      <circle cx="16" cy="14" r="3.5" fill="#6b728a"/>
+      <circle cx="28" cy="14" r="3.5" fill="#6b728a"/>
+      <circle cx="40" cy="14" r="3.5" fill="#6b728a"/>
+      <text x="56" y="18" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8b95ad">journalctl -f · session</text>
+
+      <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12.5" fill="#a9b7d0">
+        <text x="22" y="56" fill="#8eb6ff">::</text><text x="44" y="56">mounting workspace overlay</text>
+        <text x="22" y="82" fill="#6ef3c5">ok</text><text x="48" y="82">pointer seat attached</text>
+        <text x="22" y="108" fill="#6ef3c5">ok</text><text x="48" y="108">virtual output 2880×1600@120</text>
+        <text x="22" y="134" fill="#8eb6ff">::</text><text x="44" y="134">negotiating remote stream</text>
+        <text x="22" y="160" fill="#6ef3c5">ok</text><text x="48" y="160">input bridge warm</text>
+        <text x="22" y="186" fill="#6ef3c5">ok</text><text x="48" y="186">layout engine: tile-spiral</text>
+        <text x="22" y="212" fill="#8eb6ff">::</text><text x="44" y="212">identity: benm-dev@sydney</text>
+        <text x="22" y="238" fill="#6ef3c5">ok</text><text x="48" y="238">session ready</text>
+        <!-- staggered reveal -->
+        <animate attributeName="opacity" values="0.15;1" dur="0.01s" begin="0s" fill="freeze" />
+      </g>
+      <!-- progressive line highlights via opacity pulses -->
+      <rect x="18" y="42" width="500" height="22" fill="#8eb6ff" opacity="0">
+        <animate attributeName="opacity" values="0;0.12;0;0" keyTimes="0;0.08;0.16;1" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="42;42;68;68;94;94;120;120;146;146;172;172;198;198;224;224" dur="6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- bottom focus strip -->
+    <g transform="translate(52,308)">
+      <rect width="988" height="64" rx="12" fill="#0f1422" stroke="#2a3348"/>
+      <text x="22" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6ef3c5">FOCUS</text>
+      <text x="22" y="48" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#c9d4ea">remote workstation   ·   declarative hosts   ·   local-first tools   ·   quiet agents</text>
+      <circle cx="952" cy="32" r="5" fill="#6ef3c5">
+        <animate attributeName="opacity" values="1;0.25;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="936" y="36" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#8b95ad">live</text>
+    </g>
+  </g>
+</svg>
